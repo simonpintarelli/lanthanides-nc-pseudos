@@ -1,8 +1,8 @@
 
-  **** **** ******  **  PROGRAM STARTED AT               2022-03-24 23:38:58.110
+  **** **** ******  **  PROGRAM STARTED AT               2022-03-25 00:15:16.447
  ***** ** ***  *** **   PROGRAM STARTED ON                          threadripper
  **    ****   ******    PROGRAM STARTED BY                                 simon
- ***** **    ** ** **   PROGRAM PROCESS ID                               2768911
+ ***** **    ** ** **   PROGRAM PROCESS ID                               2798561
   **** **  *******  **  PROGRAM STARTED IN /fast-scratch/cp2k-generate-upf/lanth
                                            anides-nc-pseudos/Nd
 
@@ -37,12 +37,12 @@
  MEMORY| system memory details [Kb]
  MEMORY|                        rank 0           min           max       average
  MEMORY| MemTotal             65758036      65758036      65758036      65758036
- MEMORY| MemFree              35209748      35209748      35209748      35209748
- MEMORY| Buffers               3421124       3421124       3421124       3421124
- MEMORY| Cached               21311024      21311024      21311024      21311024
- MEMORY| Slab                  3650180       3650180       3650180       3650180
- MEMORY| SReclaimable          3275916       3275916       3275916       3275916
- MEMORY| MemLikelyFree        63217812      63217812      63217812      63217812
+ MEMORY| MemFree              35186208      35186208      35186208      35186208
+ MEMORY| Buffers               3422896       3422896       3422896       3422896
+ MEMORY| Cached               21313120      21313120      21313120      21313120
+ MEMORY| Slab                  3651880       3651880       3651880       3651880
+ MEMORY| SReclaimable          3276568       3276568       3276568       3276568
+ MEMORY| MemLikelyFree        63198792      63198792      63198792      63198792
 
 
  *** Fundamental physical constants (SI units) ***
@@ -132,79 +132,227 @@
  FUNCTIONAL|  pp. 3865-3868, (1996){spin unpolarized}                           
 
  Electronic structure
-    Total number of core electrons                                          0.00
-    Total number of valence electrons                                      60.00
+    Total number of core electrons                                         54.00
+    Total number of valence electrons                                       6.00
     Total number of electrons                                              60.00
     Multiplicity                                                   not specified
-    S      2.00  2.00  2.00  2.00  2.00  2.00
-    P      6.00  6.00  6.00  6.00
-    D     10.00 10.00
+    S   [  2.00  2.00  2.00  2.00  2.00] 2.00
+    P   [  6.00  6.00  6.00  6.00]
+    D   [ 10.00 10.00]
     F      4.00
 
 
  *******************************************************************************
                   Iteration          Convergence                     Energy [au]
  *******************************************************************************
-                          1         20.4090                   -9247.433264931604
-                          2         15.2378                   -9252.959077878428
-                          3        0.684615                   -9286.143371548782
-                          4         2.45144                   -9278.233073957910
-                          5        0.880506E-01               -9286.232615039238
-                          6        0.433469E-01               -9286.241902415637
-                          7        0.220951E-01               -9286.243503926600
-                          8        0.620896E-02               -9286.243658732295
-                          9        0.306217E-03               -9286.243729137052
-                         10        0.439741E-04               -9286.243729272252
-                         11        0.768261E-05               -9286.243729273956
-                         12        0.361846E-06               -9286.243729274052
+                          1        0.491956                     -39.059381828996
+                          2        0.377513E-01                 -39.087160729888
+                          3        0.455885E-02                 -39.087656950903
+                          4        0.284854E-04                 -39.087663684163
+                          5        0.973182E-07                 -39.087663684456
 
- Energy components [Hartree]           Total Energy ::        -9286.243729274052
-                                        Band Energy ::        -5697.165896230422
-                                     Kinetic Energy ::         9283.140449208489
-                                   Potential Energy ::       -18569.384178482542
-                                      Virial (-V/T) ::            2.000334292052
-                                        Core Energy ::       -12726.883419521111
-                                          XC Energy ::         -214.381201255352
-                                     Coulomb Energy ::         3655.020891502410
+ Energy components [Hartree]           Total Energy ::          -39.087663684456
+                                        Band Energy ::          -25.404783157062
+                                     Kinetic Energy ::           45.808348267296
+                                   Potential Energy ::          -84.896011951752
+                                      Virial (-V/T) ::            1.853286904308
+                                        Core Energy ::          -50.221811578991
+                                          XC Energy ::           -3.602653831790
+                                     Coulomb Energy ::           14.736801726325
+                       Total Pseudopotential Energy ::          -96.030159846287
+                       Local Pseudopotential Energy ::          -56.086489376466
+                    Nonlocal Pseudopotential Energy ::          -39.943670469821
 
  Orbital energies  State     L     Occupation   Energy[a.u.]          Energy[eV]
 
-                       1     0          2.000   -1511.096513       -41119.027265
-                       2     0          2.000    -236.783115        -6443.196225
-                       3     0          2.000     -51.207908        -1393.438053
-                       4     0          2.000     -10.031685         -272.976019
-                       5     0          2.000      -1.332076          -36.247637
-                       6     0          2.000      -0.121671           -3.310847
+                       1     0          2.000      -5.048610         -137.379653
 
-                       1     1          6.000    -224.415771        -6106.663693
-                       2     1          6.000     -45.807746        -1246.492158
-                       3     1          6.000      -7.985554         -217.297987
-                       4     1          6.000      -0.795648          -21.650679
-
-                       1     2         10.000     -35.750917         -972.831926
-                       2     2         10.000      -4.379699         -119.177677
-
-                       1     3          4.000      -0.171370           -4.663220
+                       1     3          4.000      -3.826891         -104.135000
 
 
- Total Electron Density at R=0:                                    152509.888479
+ Total Electron Density at R=0:                                         0.000001
 
  Basis Set Condition Numbers: 2*covalent radius=  6.1983
+ Lattice constant:          5.578                Condition number:      100.0000
+ Lattice constant:          5.888                Condition number:      100.0000
+ Lattice constant:          6.198                Condition number:      100.0000
+ Lattice constant:          6.508                Condition number:      100.0000
+ Lattice constant:          6.818                Condition number:      100.0000
+ Lattice constant:          7.128                Condition number:      100.0000
+ Lattice constant:          7.438                Condition number:      100.0000
+ Lattice constant:          7.748                Condition number:      100.0000
+ Lattice constant:          8.058                Condition number:      100.0000
+ Lattice constant:            Inf                Condition number:      100.0000
 
- *******************************************************************************
- *   ___                                                                       *
- *  /   \                                                                      *
- * [ABORT]                                                                     *
- *  \___/                            l value too high                          *
- *    |                                                                        *
- *  O/|                                                                        *
- * /| |                                                                        *
- * / \                                               aobasis/ai_overlap.F:2076 *
- *******************************************************************************
+ Basis Set Completeness Estimates
+   L-quantum number:   0
+    Slater Exponent           Completeness n-qm= 1          Completeness n-qm= 6
+         119.400000                       1.000000                      0.999991
+         106.159127                       1.000000                      0.999987
+          92.918254                       1.000000                      0.999999
+          79.677381                       1.000000                      0.999985
+          66.436508                       1.000000                      0.999999
+          53.195635                       1.000000                      0.999988
+          39.954762                       1.000000                      0.999985
+          26.713889                       1.000000                      0.999988
+          13.473016                       1.000000                      0.999989
+           0.232143                       0.997817                      0.174020
+   L-quantum number:   1
+    Slater Exponent           Completeness n-qm= 2          Completeness n-qm= 5
+          38.850000                       1.000000                      0.999999
+          34.600694                       1.000000                      0.999996
+          30.351389                       1.000000                      0.999997
+          26.102083                       1.000000                      0.999998
+          21.852778                       1.000000                      0.999996
+          17.603472                       1.000000                      0.999996
+          13.354167                       1.000000                      0.999998
+           9.104861                       1.000000                      0.999997
+           4.855556                       1.000000                      0.999999
+           0.606250                       0.998966                      0.808045
+   L-quantum number:   2
+    Slater Exponent           Completeness n-qm= 3          Completeness n-qm= 4
+          13.566667                       1.000000                      0.999998
+          12.244695                       1.000000                      0.999999
+          10.922723                       1.000000                      0.999999
+           9.600751                       1.000000                      0.999998
+           8.278779                       1.000000                      0.999999
+           6.956807                       1.000000                      0.999998
+           5.634835                       1.000000                      0.999999
+           4.312863                       1.000000                      0.999999
+           2.990891                       1.000000                      0.999998
+           1.668919                       0.992907                      0.957484
+   L-quantum number:   3
+    Slater Exponent           Completeness n-qm= 4          Completeness n-qm= 5
+           6.675676                       0.999998                      0.999995
+           6.119369                       0.999998                      0.999998
+           5.563063                       0.999999                      0.999994
+           5.006757                       0.999998                      0.999993
+           4.450450                       0.999998                      0.999997
+           3.894144                       0.999999                      0.999993
+           3.337838                       0.999998                      0.999996
+           2.781532                       0.999999                      0.999992
+           2.225225                       0.999998                      0.999996
+           1.668919                       0.999997                      0.999995
 
 
- ===== Routine Calling Stack ===== 
+                             NORMAL TERMINATION OF     
+                                                       
+                           ****  ******  ****   ****   
+                          **  ** ****** **  ** ******  
+                          ******   **   **  ** **  **  
+                          **  **   **    ****  **  **  
 
-            3 atom_energy_opt
-            2 atom_code
-            1 CP2K
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                                DBCSR STATISTICS                             -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+ COUNTER                                    TOTAL       BLAS       SMM       ACC
+ flops inhomo. stacks                           0       0.0%      0.0%      0.0%
+ flops total                         0.000000E+00       0.0%      0.0%      0.0%
+ flops max/rank                      0.000000E+00       0.0%      0.0%      0.0%
+ matmuls inhomo. stacks                         0       0.0%      0.0%      0.0%
+ matmuls total                                  0       0.0%      0.0%      0.0%
+ number of processed stacks                     0       0.0%      0.0%      0.0%
+ average stack size                                     0.0       0.0       0.0
+ marketing flops                     0.000000E+00
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                      DBCSR MESSAGE PASSING PERFORMANCE                      -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+ ROUTINE             CALLS      AVE VOLUME [Bytes]
+ MP_Bcast                1                     12.
+ MP_Allreduce           19                     21.
+ -------------------------------------------------------------------------------
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                                GRID STATISTICS                              -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+ LP    KERNEL             BACKEND                              COUNT     PERCENT
+ -------------------------------------------------------------------------------
+
+ MEMORY| Estimated peak process memory [MiB]                                 124
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                         MESSAGE PASSING PERFORMANCE                         -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+
+ ROUTINE             CALLS      AVE VOLUME [Bytes]
+ MP_Allreduce          262                      8.
+ -------------------------------------------------------------------------------
+
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                           R E F E R E N C E S                               -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+ 
+ CP2K version 8.2, the CP2K developers group (2021).
+ CP2K is freely available from https://www.cp2k.org/ .
+
+ Schuett, Ole; Messmer, Peter; Hutter, Juerg; VandeVondele, Joost. 
+ Electronic Structure Calculations on Graphics Processing Units, John
+ Wiley & Sons, Ltd, 173-190 (2016). 
+ GPU-Accelerated Sparse Matrix-Matrix Multiplication for
+ Linear Scaling Density Functional Theory.
+ https://doi.org/10.1002/9781118670712.ch8
+
+ Heinecke, A; Henry, G; Hutchinson, M; Pabst, H. 
+ Proceedings of Intl. Supercomputing Conference, 981-991 (2016). 
+ LIBXSMM: Accelerating Small Matrix Multiplications
+ by Runtime Code Generation.
+ https://doi.org/10.1109/SC.2016.83
+
+ Borstnik, U; VandeVondele, J; Weber, V; Hutter, J. 
+ PARALLEL COMPUTING, 40 (5-6), 47-58 (2014). 
+ Sparse matrix multiplication: The distributed block-compressed sparse
+ row library.
+ https://doi.org/10.1016/j.parco.2014.03.012
+
+ Hutter, J; Iannuzzi, M; Schiffmann, F; VandeVondele, J. 
+ WIREs Comput Mol Sci., 4 (1), 15-25 (2014). 
+ CP2K: atomistic simulations of condensed matter systems.
+ https://doi.org/10.1002/wcms.1159
+
+ Frigo, M; Johnson, SG. 
+ PROCEEDINGS OF THE IEEE, 93 (2), 216-231 (2005). 
+ The design and implementation of FFTW3.
+ https://doi.org/10.1109/JPROC.2004.840301
+
+ Perdew, JP; Burke, K; Ernzerhof, M. 
+ PHYSICAL REVIEW LETTERS, 77 (18), 3865-3868 (1996). 
+ Generalized gradient approximation made simple.
+ https://doi.org/10.1103/PhysRevLett.77.3865
+
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                                T I M I N G                                  -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+ SUBROUTINE                       CALLS  ASD         SELF TIME        TOTAL TIME
+                                MAXIMUM       AVERAGE  MAXIMUM  AVERAGE  MAXIMUM
+ CP2K                                 1  1.0    0.019    0.019    0.837    0.837
+ atom_code                            1  2.0    0.000    0.000    0.818    0.818
+ atom_energy_opt                      1  3.0    0.776    0.776    0.818    0.818
+ calculate_atom                       1  4.0    0.000    0.000    0.037    0.037
+ calculate_atom_restricted            1  5.0    0.015    0.015    0.037    0.037
+ calculate_atom_vxc_lda               5  6.0    0.010    0.010    0.021    0.021
+ -------------------------------------------------------------------------------
+
+ The number of warnings for this run is : 0
+ 
+ -------------------------------------------------------------------------------
+  **** **** ******  **  PROGRAM ENDED AT                 2022-03-25 00:15:17.592
+ ***** ** ***  *** **   PROGRAM RAN ON                              threadripper
+ **    ****   ******    PROGRAM RAN BY                                     simon
+ ***** **    ** ** **   PROGRAM PROCESS ID                               2798561
+  **** **  *******  **  PROGRAM STOPPED IN /fast-scratch/cp2k-generate-upf/lanth
+                                           anides-nc-pseudos/Nd
