@@ -65,14 +65,14 @@ Read GTH data from each directory (atom) and write cp2k ATOM input to =[Atom].in
   rows = []
   for _, row in df.iterrows():
       atom = row['type']
-      row['gth'] = ''.join(open(os.path.join(atom,atom), 'r').readlines()[1:])
+      row['gth'] = '    '.join(open(os.path.join(atom,atom), 'r').readlines()[1:])
       rows.append(row)
   df = pa.DataFrame(rows)
-  print(df)
-
   for _, row in df.iterrows():
       out = template.format(row['type'], row['config'], row['gth'])
 
       with open(os.path.join(row['type'], row['type']+'.inp'), 'w') as f:
           f.write(out)
 #+end_src
+
+#+RESULTS:
