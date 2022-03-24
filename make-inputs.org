@@ -1,0 +1,78 @@
+#+name: electron_configurations
+|--------+------------------------|
+| Specie | Electron configuration |
+|--------+------------------------|
+| La     | [Xe] 5d1 6s2           |
+| Ce     | [Xe] 4f1 5d1 6s2       |
+| Pr     | [Xe] 4f3 6s2           |
+| Nd     | [Xe] 4f4 6s2           |
+| Pm     | [Xe] 4f5 6s2           |
+| Sm     | [Xe] 4f6 6s2           |
+| Eu     | [Xe] 4f7 6s2           |
+| Gd     | [Xe] 4f7 5d1 6s2       |
+| Tb     | [Xe] 4f9 6s2           |
+| Dy     | [Xe] 4f10 6s2          |
+| Ho     | [Xe] 4f11 6s2          |
+| Er     | [Xe] 4f12 6s2          |
+| Tm     | [Xe] 4f13 6s2          |
+| Yb     | [Xe] 4f14 6s2          |
+| Lu     | [Xe] 4f14 5d1 6s2      |
+|--------+------------------------|
+
+#+name: template
+#+begin_example
+&GLOBAL
+  PROGRAM_NAME ATOM
+&END GLOBAL
+&ATOM
+  ELEMENT  {0:s}
+  ELECTRON_CONFIGURATION {1:s}
+  &METHOD
+     METHOD_TYPE  KOHN-SHAM
+     &XC
+       &XC_FUNCTIONAL PBE
+       &END XC_FUNCTIONAL
+     &END XC
+  &END METHOD
+
+  &PP_BASIS
+    BASIS_TYPE GEOMETRICAL_GTO
+  &END PP_BASIS
+  &POTENTIAL
+    PSEUDO_TYPE GTH
+    &GTH_POTENTIAL
+    {2:s}
+    &END
+    CONFINEMENT_TYPE  BARRIER
+    CONFINEMENT 200. 4.0 12.0
+  &END POTENTIAL
+  &PRINT
+    &UPF_FILE
+      FILENAME {0:s}.UPF
+    &END
+  &END
+&END ATOM
+
+#+end_example
+
+Read GTH data from each directory (atom) and write cp2k ATOM input to =[Atom].inp=.
+#+begin_src python :var data=electron_configurations template=template :results output
+  import pandas as pa
+  import os
+
+  df = pa.DataFrame([{'type': x[0], 'config': x[1]} for x in data[1:]])
+  # open  cp2k GTH data
+  rows = []
+  for _, row in df.iterrows():
+      atom = row['type']
+      row['gth'] = ''.join(open(os.path.join(atom,atom), 'r').readlines()[1:])
+      rows.append(row)
+  df = pa.DataFrame(rows)
+  print(df)
+
+  for _, row in df.iterrows():
+      out = template.format(row['type'], row['config'], row['gth'])
+
+      with open(os.path.join(row['type'], row['type']+'.inp'), 'w') as f:
+          f.write(out)
+#+end_src

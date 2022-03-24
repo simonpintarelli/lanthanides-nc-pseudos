@@ -1,0 +1,11 @@
+* Convert GTH pseudopotentials from CP2K-GTH to UPF
+
+- Lu, J., Cantu, D. C., Nguyen, M., Li, J., Glezakou, V., & Rousseau, R. ().
+  Norm-Conserving Pseudopotentials and Basis Sets To Explore Lanthanide
+  Chemistry in Complex Environments. , 15(11), 5987–5997.
+  http://dx.doi.org/10.1021/acs.jctc.9b00553
+
+Reference: https://lists.cp2k.org/archives/cp2k-user/2019-July/012001.html
+
+CP2K GTH data:
+https://github.com/cp2k/cp2k/blob/master/data/LnPP1_POTENTIALS#L1
