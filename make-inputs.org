@@ -1,23 +1,23 @@
 #+name: electron_configurations
-|--------+------------------------|
-| Specie | Electron configuration |
-|--------+------------------------|
-| La     | [Xe] 5d1 6s2           |
-| Ce     | [Xe] 4f1 5d1 6s2       |
-| Pr     | [Xe] 4f3 6s2           |
-| Nd     | [Xe] 4f4 6s2           |
-| Pm     | [Xe] 4f5 6s2           |
-| Sm     | [Xe] 4f6 6s2           |
-| Eu     | [Xe] 4f7 6s2           |
-| Gd     | [Xe] 4f7 5d1 6s2       |
-| Tb     | [Xe] 4f9 6s2           |
-| Dy     | [Xe] 4f10 6s2          |
-| Ho     | [Xe] 4f11 6s2          |
-| Er     | [Xe] 4f12 6s2          |
-| Tm     | [Xe] 4f13 6s2          |
-| Yb     | [Xe] 4f14 6s2          |
-| Lu     | [Xe] 4f14 5d1 6s2      |
-|--------+------------------------|
+|--------+------------------------+------|
+| Specie | Electron configuration | Core |
+|--------+------------------------+------|
+| La     | 5d1 6s2                | [Xe] |
+| Ce     | 4f1 5d1 6s2            | [Xe] |
+| Pr     | 4f3 6s2                | [Xe] |
+| Nd     | 4f4 6s2                | [Xe] |
+| Pm     | 4f5 6s2                | [Xe] |
+| Sm     | 4f6 6s2                | [Xe] |
+| Eu     | 4f7 6s2                | [Xe] |
+| Gd     | 4f7 5d1 6s2            | [Xe] |
+| Tb     | 4f9 6s2                | [Xe] |
+| Dy     | 4f10 6s2               | [Xe] |
+| Ho     | 4f11 6s2               | [Xe] |
+| Er     | 4f12 6s2               | [Xe] |
+| Tm     | 4f13 6s2               | [Xe] |
+| Yb     | 4f14 6s2               | [Xe] |
+| Lu     | 4f14 5d1 6s2           | [Xe] |
+|--------+------------------------+------|
 
 CP2K input template:
 #+name: template
@@ -27,7 +27,7 @@ CP2K input template:
 &END GLOBAL
 &ATOM
   ELEMENT  {0:s}
-  ELECTRON_CONFIGURATION {1:s}
+  ELECTRON_CONFIGURATION CORE {1:s}
   CORE [Xe]
   &METHOD
      METHOD_TYPE  KOHN-SHAM
