@@ -19,6 +19,7 @@
 | Lu     | [Xe] 4f14 5d1 6s2      |
 |--------+------------------------|
 
+CP2K input template:
 #+name: template
 #+begin_example
 &GLOBAL
@@ -56,7 +57,7 @@
 
 #+end_example
 
-Read GTH data from each directory (atom) and write cp2k ATOM input to =[Atom].inp=.
+Read GTH data from each directory (atom) and write cp2k ATOM input to =[Atom].inp=:
 #+begin_src python :var data=electron_configurations template=template :results output
   import pandas as pa
   import os
