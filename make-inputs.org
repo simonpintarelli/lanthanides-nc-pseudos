@@ -28,6 +28,7 @@ CP2K input template:
 &ATOM
   ELEMENT  {0:s}
   ELECTRON_CONFIGURATION {1:s}
+  CORE [Xe]
   &METHOD
      METHOD_TYPE  KOHN-SHAM
      &XC
