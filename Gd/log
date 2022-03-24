@@ -1,0 +1,211 @@
+
+  **** **** ******  **  PROGRAM STARTED AT               2022-03-24 23:38:47.838
+ ***** ** ***  *** **   PROGRAM STARTED ON                          threadripper
+ **    ****   ******    PROGRAM STARTED BY                                 simon
+ ***** **    ** ** **   PROGRAM PROCESS ID                               2766876
+  **** **  *******  **  PROGRAM STARTED IN /fast-scratch/cp2k-generate-upf/lanth
+                                           anides-nc-pseudos/Gd
+
+ CP2K| version string:                                          CP2K version 8.2
+ CP2K| source code revision number:                                  git:310b7ab
+ CP2K| cp2kflags: omp libint fftw3 libxc parallel mpi3 scalapack xsmm           
+ CP2K| is freely available from                            https://www.cp2k.org/
+ CP2K| Program compiled at                          Wed Mar 23 11:46:09 CET 2022
+ CP2K| Program compiled on                                          threadripper
+ CP2K| Program compiled for                                   linux-arch-zen-gcc
+ CP2K| Data directory path    /mnt/nvme/spack/opt/spack/linux-arch-zen/gcc-11.2.
+ CP2K| Input file name                                                    Gd.inp
+
+ GLOBAL| Method name                                                        ATOM
+ GLOBAL| Project name                                                    PROJECT
+ GLOBAL| Run type                                                   ENERGY_FORCE
+ GLOBAL| FFT library                                                       FFTW3
+ GLOBAL| Diagonalization library                                       ScaLAPACK
+ GLOBAL| Orthonormality check for eigenvectors                          DISABLED
+ GLOBAL| Matrix multiplication library                                    SCALAP
+ GLOBAL| All-to-all communication in single precision                          F
+ GLOBAL| FFTs using library dependent lengths                                  F
+ GLOBAL| Grid backend                                                       AUTO
+ GLOBAL| Global print level                                               MEDIUM
+ GLOBAL| MPI I/O enabled                                                       T
+ GLOBAL| Total number of message passing processes                             1
+ GLOBAL| Number of threads for this process                                   32
+ GLOBAL| This output is from process                                           0
+ GLOBAL| CPU model name           AMD Ryzen Threadripper 1950X 16-Core Processor
+ GLOBAL| CPUID                                                              1002
+
+ MEMORY| system memory details [Kb]
+ MEMORY|                        rank 0           min           max       average
+ MEMORY| MemTotal             65758036      65758036      65758036      65758036
+ MEMORY| MemFree              35202664      35202664      35202664      35202664
+ MEMORY| Buffers               3421092       3421092       3421092       3421092
+ MEMORY| Cached               21310596      21310596      21310596      21310596
+ MEMORY| Slab                  3650252       3650252       3650252       3650252
+ MEMORY| SReclaimable          3275900       3275900       3275900       3275900
+ MEMORY| MemLikelyFree        63210252      63210252      63210252      63210252
+
+
+ *** Fundamental physical constants (SI units) ***
+
+ *** Literature: B. J. Mohr and B. N. Taylor,
+ ***             CODATA recommended values of the fundamental physical
+ ***             constants: 2006, Web Version 5.1
+ ***             http://physics.nist.gov/constants
+
+ Speed of light in vacuum [m/s]                             2.99792458000000E+08
+ Magnetic constant or permeability of vacuum [N/A**2]       1.25663706143592E-06
+ Electric constant or permittivity of vacuum [F/m]          8.85418781762039E-12
+ Planck constant (h) [J*s]                                  6.62606896000000E-34
+ Planck constant (h-bar) [J*s]                              1.05457162825177E-34
+ Elementary charge [C]                                      1.60217648700000E-19
+ Electron mass [kg]                                         9.10938215000000E-31
+ Electron g factor [ ]                                     -2.00231930436220E+00
+ Proton mass [kg]                                           1.67262163700000E-27
+ Fine-structure constant                                    7.29735253760000E-03
+ Rydberg constant [1/m]                                     1.09737315685270E+07
+ Avogadro constant [1/mol]                                  6.02214179000000E+23
+ Boltzmann constant [J/K]                                   1.38065040000000E-23
+ Atomic mass unit [kg]                                      1.66053878200000E-27
+ Bohr radius [m]                                            5.29177208590000E-11
+
+ *** Conversion factors ***
+
+ [u] -> [a.u.]                                              1.82288848426455E+03
+ [Angstrom] -> [Bohr] = [a.u.]                              1.88972613288564E+00
+ [a.u.] = [Bohr] -> [Angstrom]                              5.29177208590000E-01
+ [a.u.] -> [s]                                              2.41888432650478E-17
+ [a.u.] -> [fs]                                             2.41888432650478E-02
+ [a.u.] -> [J]                                              4.35974393937059E-18
+ [a.u.] -> [N]                                              8.23872205491840E-08
+ [a.u.] -> [K]                                              3.15774647902944E+05
+ [a.u.] -> [kJ/mol]                                         2.62549961709828E+03
+ [a.u.] -> [kcal/mol]                                       6.27509468713739E+02
+ [a.u.] -> [Pa]                                             2.94210107994716E+13
+ [a.u.] -> [bar]                                            2.94210107994716E+08
+ [a.u.] -> [atm]                                            2.90362800883016E+08
+ [a.u.] -> [eV]                                             2.72113838565563E+01
+ [a.u.] -> [Hz]                                             6.57968392072181E+15
+ [a.u.] -> [1/cm] (wave numbers)                            2.19474631370540E+05
+ [a.u./Bohr**2] -> [1/cm]                                   5.14048714338585E+03
+ 
+ DBCSR| CPU Multiplication driver                                           XSMM
+ DBCSR| Multrec recursion limit                                              512
+ DBCSR| Multiplication stack size                                           1000
+ DBCSR| Maximum elements for images                                    UNLIMITED
+ DBCSR| Multiplicative factor virtual images                                   1
+ DBCSR| Use multiplication densification                                       T
+ DBCSR| Multiplication size stacks                                             3
+ DBCSR| Use memory pool for CPU allocation                                     F
+ DBCSR| Number of 3D layers                                               SINGLE
+ DBCSR| Use MPI memory allocation                                              F
+ DBCSR| Use RMA algorithm                                                      F
+ DBCSR| Use Communication thread                                               T
+ DBCSR| Communication thread load                                              0
+ DBCSR| MPI: My node id                                                        0
+ DBCSR| MPI: Number of nodes                                                   1
+ DBCSR| OMP: Current number of threads                                        32
+ DBCSR| OMP: Max number of threads                                            32
+ DBCSR| Split modifier for TAS multiplication algorithm                  1.0E+00
+
+
+
+                           ****  ******  ****   ****   
+                          **  ** ****** **  ** ******  
+                          ******   **   **  ** **  **  
+                          **  **   **    ****  **  **  
+                                                       
+                             University of Zurich      
+                                 2009 - 2015           
+                                                       
+                                 Version 0.0           
+                                                                   
+
+
+ Atomic Energy Calculation             Gadolinium [Gd]       Atomic number:   64
+
+
+ METHOD    | Restricted Kohn-Sham Calculation
+ METHOD    | Nonrelativistic Calculation
+ FUNCTIONAL| ROUTINE=NEW
+ FUNCTIONAL| PBE:
+ FUNCTIONAL| J.P.Perdew, K.Burke, M.Ernzerhof, Phys. Rev. Letter, vol. 77, n 18,
+ FUNCTIONAL|  pp. 3865-3868, (1996){spin unpolarized}                           
+
+ Electronic structure
+    Total number of core electrons                                          0.00
+    Total number of valence electrons                                      64.00
+    Total number of electrons                                              64.00
+    Multiplicity                                                   not specified
+    S      2.00  2.00  2.00  2.00  2.00  2.00
+    P      6.00  6.00  6.00  6.00
+    D     10.00 10.00  1.00
+    F      7.00
+
+
+ *******************************************************************************
+                  Iteration          Convergence                     Energy [au]
+ *******************************************************************************
+                          1         22.5437                  -10743.661056612124
+                          2         20.9325                  -10756.989017332588
+                          3         1.76129                  -10820.966009903397
+                          4         6.38285                  -10785.984052104312
+                          5         1.04726                  -10822.501384662921
+                          6        0.727208                  -10822.767766832510
+                          7        0.114289                  -10823.008781269296
+                          8        0.102902E-01              -10823.017215549695
+                          9        0.353752E-02              -10823.017391119731
+                         10        0.474820E-04              -10823.017404706665
+                         11        0.105539E-04              -10823.017404709422
+                         12        0.439033E-06              -10823.017404709508
+
+ Energy components [Hartree]           Total Energy ::       -10823.017404709508
+                                        Band Energy ::        -6622.878567060324
+                                     Kinetic Energy ::        10819.565839445746
+                                   Potential Energy ::       -21642.583244155256
+                                      Virial (-V/T) ::            2.000319011439
+                                        Core Energy ::       -14857.969544152133
+                                          XC Energy ::         -238.834300061181
+                                     Coulomb Energy ::         4273.786439503805
+
+ Orbital energies  State     L     Occupation   Energy[a.u.]          Energy[eV]
+
+                       1     0          2.000   -1730.122635       -47079.031132
+                       2     0          2.000    -275.548105        -7498.045252
+                       3     0          2.000     -60.813210        -1654.811608
+                       4     0          2.000     -12.020859         -327.104210
+                       5     0          2.000      -1.604968          -43.673408
+                       6     0          2.000      -0.138993           -3.782203
+
+                       1     1          6.000    -262.153516        -7133.559949
+                       2     1          6.000     -54.854093        -1492.655783
+                       3     1          6.000      -9.689802         -263.672926
+                       4     1          6.000      -0.974867          -26.527487
+
+                       1     2         10.000     -43.751484        -1190.538434
+                       2     2         10.000      -5.535165         -150.619493
+                       3     2          1.000      -0.121236           -3.299007
+
+                       1     3          7.000      -0.479947          -13.060022
+
+
+ Total Electron Density at R=0:                                    185519.802129
+
+ Basis Set Condition Numbers: 2*covalent radius=  6.0849
+
+ *******************************************************************************
+ *   ___                                                                       *
+ *  /   \                                                                      *
+ * [ABORT]                                                                     *
+ *  \___/                            l value too high                          *
+ *    |                                                                        *
+ *  O/|                                                                        *
+ * /| |                                                                        *
+ * / \                                               aobasis/ai_overlap.F:2076 *
+ *******************************************************************************
+
+
+ ===== Routine Calling Stack ===== 
+
+            3 atom_energy_opt
+            2 atom_code
+            1 CP2K
