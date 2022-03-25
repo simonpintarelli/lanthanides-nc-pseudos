@@ -30,7 +30,7 @@ Lu
        has_gipaw="F"
        paw_as_gipaw="F"
        core_correction="F"
-       functional="DFT"
+       functional="PBE"
        z_valence="35.000000"
        total_psenergy="-1324.6800"
        wfc_cutoff="0.0E+00"

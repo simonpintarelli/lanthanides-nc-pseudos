@@ -30,7 +30,7 @@ Ce
        has_gipaw="F"
        paw_as_gipaw="F"
        core_correction="F"
-       functional="DFT"
+       functional="PBE"
        z_valence="12.000000"
        total_psenergy="-76.847884"
        wfc_cutoff="0.0E+00"

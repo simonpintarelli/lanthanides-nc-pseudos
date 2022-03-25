@@ -30,7 +30,7 @@ Pm
        has_gipaw="F"
        paw_as_gipaw="F"
        core_correction="F"
-       functional="DFT"
+       functional="PBE"
        z_valence="15.000000"
        total_psenergy="-133.20061"
        wfc_cutoff="0.0E+00"

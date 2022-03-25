@@ -30,7 +30,7 @@ Gd
        has_gipaw="F"
        paw_as_gipaw="F"
        core_correction="F"
-       functional="DFT"
+       functional="PBE"
        z_valence="18.000000"
        total_psenergy="-214.18326"
        wfc_cutoff="0.0E+00"
