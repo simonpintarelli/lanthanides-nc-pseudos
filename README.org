@@ -1,4 +1,4 @@
-* Convert GTH pseudopotentials from CP2K-GTH to UPF
+* Convert LnPP1-GTH pseudopotentials to UPF
 
 - Lu, J., Cantu, D. C., Nguyen, M., Li, J., Glezakou, V., & Rousseau, R. ().
   Norm-Conserving Pseudopotentials and Basis Sets To Explore Lanthanide
