@@ -1,23 +1,23 @@
 #+name: electron_configurations
-|--------+------------------------+------|
-| Specie | Electron configuration | Core |
-|--------+------------------------+------|
-| La     | 5d1 6s2                | [Xe] |
-| Ce     | 4f1 5d1 6s2            | [Xe] |
-| Pr     | 4f3 6s2                | [Xe] |
-| Nd     | 4f4 6s2                | [Xe] |
-| Pm     | 4f5 6s2                | [Xe] |
-| Sm     | 4f6 6s2                | [Xe] |
-| Eu     | 4f7 6s2                | [Xe] |
-| Gd     | 4f7 5d1 6s2            | [Xe] |
-| Tb     | 4f9 6s2                | [Xe] |
-| Dy     | 4f10 6s2               | [Xe] |
-| Ho     | 4f11 6s2               | [Xe] |
-| Er     | 4f12 6s2               | [Xe] |
-| Tm     | 4f13 6s2               | [Xe] |
-| Yb     | 4f14 6s2               | [Xe] |
-| Lu     | 4f14 5d1 6s2           | [Xe] |
-|--------+------------------------+------|
+|--------+---------------------------+-----------|
+| Specie | Electron configuration    | Core      |
+|--------+---------------------------+-----------|
+| La     | 5s2 5p6 5d1 6s2           | [Kr] 4d10 |
+| Ce     | 5s2 5p6 4f1 5d1 6s2       | [Kr] 4d10 |
+| Pr     | 5s2 5p6 4f3 6s2           | [Kr] 4d10 |
+| Nd     | 5s2 5p6 4f4 6s2           | [Kr] 4d10 |
+| Pm     | 5s2 5p6 4f5 6s2           | [Kr] 4d10 |
+| Sm     | 5s2 5p6 4f6 6s2           | [Kr] 4d10 |
+| Eu     | 5s2 5p6 4f7 6s2           | [Kr] 4d10 |
+| Gd     | 5s2 5p6 4f7 5d1 6s2       | [Kr] 4d10 |
+| Tb     | 4d10 5s2 5p6 4f9 6s2      | [Kr]      |
+| Dy     | 4d10 5s2 5p6 4f10 6s2     | [Kr]      |
+| Ho     | 4d10 5s2 5p6 4f11 6s2     | [Kr]      |
+| Er     | 4d10 5s2 5p6 4f12 6s2     | [Kr]      |
+| Tm     | 4d10 5s2 5p6 4f13 6s2     | [Kr]      |
+| Yb     | 4d10 5s2 5p6 4f14 6s2     | [Kr]      |
+| Lu     | 4d10 5s2 5p6 4f14 5d1 6s2 | [Kr]      |
+|--------+---------------------------+-----------|
 
 CP2K input template:
 #+name: template
@@ -28,7 +28,7 @@ CP2K input template:
 &ATOM
   ELEMENT  {0:s}
   ELECTRON_CONFIGURATION CORE {1:s}
-  CORE [Xe]
+  CORE {2:s}
   &METHOD
      METHOD_TYPE  KOHN-SHAM
      &XC
@@ -42,7 +42,7 @@ CP2K input template:
   &POTENTIAL
     PSEUDO_TYPE GTH
     &GTH_POTENTIAL
-    {2:s}
+    {3:s}
     &END
   &END POTENTIAL
   &PRINT
@@ -63,7 +63,7 @@ Read GTH data from each directory (atom) and write cp2k ATOM input to =[Atom].in
   import pandas as pa
   import os
 
-  df = pa.DataFrame([{'type': x[0], 'config': x[1]} for x in data[1:]])
+  df = pa.DataFrame([{'type': x[0], 'config': x[1], 'core': x[2]} for x in data[1:]] )
   # open  cp2k GTH data
   rows = []
   for _, row in df.iterrows():
@@ -72,7 +72,7 @@ Read GTH data from each directory (atom) and write cp2k ATOM input to =[Atom].in
       rows.append(row)
   df = pa.DataFrame(rows)
   for _, row in df.iterrows():
-      out = template.format(row['type'], row['config'], row['gth'])
+      out = template.format(row['type'], row['config'], row['core'], row['gth'])
 
       with open(os.path.join(row['type'], row['type']+'.inp'), 'w') as f:
           f.write(out)

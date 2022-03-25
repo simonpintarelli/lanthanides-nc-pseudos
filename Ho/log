@@ -1,10 +1,10 @@
 
-  **** **** ******  **  PROGRAM STARTED AT               2022-03-25 00:15:13.018
+  **** **** ******  **  PROGRAM STARTED AT               2022-03-25 08:55:59.988
  ***** ** ***  *** **   PROGRAM STARTED ON                          threadripper
  **    ****   ******    PROGRAM STARTED BY                                 simon
- ***** **    ** ** **   PROGRAM PROCESS ID                               2794493
-  **** **  *******  **  PROGRAM STARTED IN /fast-scratch/cp2k-generate-upf/lanth
-                                           anides-nc-pseudos/Ho
+ ***** **    ** ** **   PROGRAM PROCESS ID                               2872942
+  **** **  *******  **  PROGRAM STARTED IN /fast-scratch/cp2k-generate-upf/NC-La
+                                           nthanide-pseudos/Ho
 
  CP2K| version string:                                          CP2K version 8.2
  CP2K| source code revision number:                                  git:310b7ab
@@ -37,12 +37,12 @@
  MEMORY| system memory details [Kb]
  MEMORY|                        rank 0           min           max       average
  MEMORY| MemTotal             65758036      65758036      65758036      65758036
- MEMORY| MemFree              35184848      35184848      35184848      35184848
- MEMORY| Buffers               3422888       3422888       3422888       3422888
- MEMORY| Cached               21312644      21312644      21312644      21312644
- MEMORY| Slab                  3652324       3652324       3652324       3652324
- MEMORY| SReclaimable          3276552       3276552       3276552       3276552
- MEMORY| MemLikelyFree        63196932      63196932      63196932      63196932
+ MEMORY| MemFree              35196828      35196828      35196828      35196828
+ MEMORY| Buffers               3437484       3437484       3437484       3437484
+ MEMORY| Cached               21319468      21319468      21319468      21319468
+ MEMORY| Slab                  3653324       3653324       3653324       3653324
+ MEMORY| SReclaimable          3278304       3278304       3278304       3278304
+ MEMORY| MemLikelyFree        63232084      63232084      63232084      63232084
 
 
  *** Fundamental physical constants (SI units) ***
@@ -132,46 +132,57 @@
  FUNCTIONAL|  pp. 3865-3868, (1996){spin unpolarized}                           
 
  Electronic structure
-    Total number of core electrons                                         54.00
-    Total number of valence electrons                                      13.00
+    Total number of core electrons                                         36.00
+    Total number of valence electrons                                      31.00
     Total number of electrons                                              67.00
     Multiplicity                                                   not specified
-    S   [  2.00  2.00  2.00  2.00  2.00] 2.00
-    P   [  6.00  6.00  6.00  6.00]
-    D   [ 10.00 10.00]
+    S   [  2.00  2.00  2.00  2.00] 2.00  2.00
+    P   [  6.00  6.00  6.00] 6.00
+    D   [ 10.00]10.00
     F     11.00
 
 
  *******************************************************************************
                   Iteration          Convergence                     Energy [au]
  *******************************************************************************
-                          1         3.27427                    -309.722321003982
-                          2        0.851109                    -309.901115045218
-                          3        0.713049E-01                -309.922668150671
-                          4        0.106364E-02                -309.922813058841
-                          5        0.271890E-05                -309.922813085489
-                          6        0.535193E-06                -309.922813085489
+                          1         28.2093                    -416.926231745528
+                          2         26.5062                    -421.307638261213
+                          3         6.32168                    -475.795097107210
+                          4         1.39769                    -481.245556150867
+                          5        0.246169                    -481.464954320258
+                          6        0.865437E-01                -481.471202346929
+                          7        0.111986E-01                -481.472366002883
+                          8        0.426367E-03                -481.472392957858
+                          9        0.211455E-04                -481.472392998948
+                         10        0.271482E-05                -481.472392999164
+                         11        0.210507E-05                -481.472392999164
+                         12        0.314907E-07                -481.472392999167
 
- Energy components [Hartree]           Total Energy ::         -309.922813085489
-                                        Band Energy ::         -197.779067175597
-                                     Kinetic Energy ::          321.523214029610
-                                   Potential Energy ::         -631.446027115099
-                                      Virial (-V/T) ::            1.963920487113
-                                        Core Energy ::         -410.718244371285
-                                          XC Energy ::          -16.203605331426
-                                     Coulomb Energy ::          116.999036617222
-                       Total Pseudopotential Energy ::         -732.241458400896
-                       Local Pseudopotential Energy ::         -540.299921845557
-                    Nonlocal Pseudopotential Energy ::         -191.941536555339
+ Energy components [Hartree]           Total Energy ::         -481.472392999167
+                                        Band Energy ::          -69.250543360166
+                                     Kinetic Energy ::          359.089471712171
+                                   Potential Energy ::         -840.561864711338
+                                      Virial (-V/T) ::            2.340814562742
+                                        Core Energy ::         -870.909634953061
+                                          XC Energy ::          -32.876694272503
+                                     Coulomb Energy ::          422.313936226397
+                       Total Pseudopotential Energy ::        -1229.999106665232
+                       Local Pseudopotential Energy ::        -1014.358454299469
+                    Nonlocal Pseudopotential Energy ::         -215.640652365763
 
  Orbital energies  State     L     Occupation   Energy[a.u.]          Energy[eV]
 
-                       1     0          2.000     -14.124084         -384.335883
+                       1     0          2.000      -1.848048          -50.287931
+                       2     0          2.000      -0.136350           -3.710284
 
-                       1     3         11.000     -15.411900         -419.379123
+                       1     1          6.000      -0.938716          -25.543765
+
+                       1     2         10.000      -5.838338         -158.869245
+
+                       1     3         11.000      -0.115098           -3.131968
 
 
- Total Electron Density at R=0:                                         3.993173
+ Total Electron Density at R=0:                                         0.752412
 
  Basis Set Condition Numbers: 2*covalent radius=  5.9715
  Lattice constant:          5.374                Condition number:      100.0000
@@ -340,20 +351,22 @@
  -------------------------------------------------------------------------------
  SUBROUTINE                       CALLS  ASD         SELF TIME        TOTAL TIME
                                 MAXIMUM       AVERAGE  MAXIMUM  AVERAGE  MAXIMUM
- CP2K                                 1  1.0    0.020    0.020    0.826    0.826
- atom_code                            1  2.0    0.000    0.000    0.805    0.805
- atom_energy_opt                      1  3.0    0.758    0.758    0.805    0.805
- calculate_atom                       1  4.0    0.000    0.000    0.042    0.042
- calculate_atom_restricted            1  5.0    0.017    0.017    0.042    0.042
- calculate_atom_vxc_lda               6  6.0    0.012    0.012    0.025    0.025
+ CP2K                                 1  1.0    0.021    0.021    0.872    0.872
+ atom_code                            1  2.0    0.000    0.000    0.851    0.851
+ atom_energy_opt                      1  3.0    0.763    0.763    0.851    0.851
+ calculate_atom                       1  4.0    0.000    0.000    0.084    0.084
+ calculate_atom_restricted            1  5.0    0.035    0.035    0.084    0.084
+ calculate_atom_vxc_lda              12  6.0    0.024    0.024    0.049    0.049
+ xc_functional_eval                  12  7.0    0.000    0.000    0.024    0.024
+ pbe_lda_eval                        12  8.0    0.024    0.024    0.024    0.024
  -------------------------------------------------------------------------------
 
  The number of warnings for this run is : 0
  
  -------------------------------------------------------------------------------
-  **** **** ******  **  PROGRAM ENDED AT                 2022-03-25 00:15:14.150
+  **** **** ******  **  PROGRAM ENDED AT                 2022-03-25 08:56:01.160
  ***** ** ***  *** **   PROGRAM RAN ON                              threadripper
  **    ****   ******    PROGRAM RAN BY                                     simon
- ***** **    ** ** **   PROGRAM PROCESS ID                               2794493
-  **** **  *******  **  PROGRAM STOPPED IN /fast-scratch/cp2k-generate-upf/lanth
-                                           anides-nc-pseudos/Ho
+ ***** **    ** ** **   PROGRAM PROCESS ID                               2872942
+  **** **  *******  **  PROGRAM STOPPED IN /fast-scratch/cp2k-generate-upf/NC-La
+                                           nthanide-pseudos/Ho
